@@ -53,12 +53,16 @@ require '../../modelos/Cliente.php';
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td><strong>FECHA:</strong></td>
-            <?php foreach ($factura as $key => $venta) : ?>
-                <td><?= $venta['VENTA_FECHA'] ?></td>
-            <?php endforeach ?>
-        </tr>
+    <tr>
+    <td><strong>FECHA:</strong></td>
+    <?php foreach ($factura as $key => $venta) : ?>
+        <?php
+            // Obtener la fecha en formato día, mes y año
+            $fecha = date('d/m/Y H:i', strtotime($venta['VENTA_FECHA']));
+        ?>
+        <td><?= $fecha ?></td>
+    <?php endforeach ?>
+</tr>
         <tr>
             <td><strong>NOMBRE CLIENTE:</strong></td>
             <?php foreach ($factura as $key => $venta) : ?>
@@ -112,12 +116,22 @@ require '../../modelos/Cliente.php';
                             <?php endforeach ?>
                         <?php else : ?>
                             <tr>
-                                <td colspan="8">NO EXISTEN REGISTROS</td>
+                                <td colspan="5">NO EXISTEN REGISTROS</td>
                             </tr>
                         <?php endif ?>
                         <tr>
                         <td colspan="4">Total:</td>
-                        <td><?= $venta['TOTAL'] ?></td>
+                        <td>
+                            <?php
+                                $total = 0;
+                                foreach ($factura as $venta ){
+                                    $total += $venta['TOTAL'];
+                                    
+                                }
+                                echo $total;
+                                 ?>
+                                
+                            </td>
                     </tr>
                     </tbody>
                 </table>
