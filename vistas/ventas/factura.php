@@ -49,7 +49,7 @@ require '../../modelos/Cliente.php';
             <table class="table table-bordered">
     <thead>
         <tr class="text-center table-dark">
-            <th colspan="3">DETALLE DE LA FACTURA.</th>
+            <th colspan="3">DETALLE FACTURA.</th>
         </tr>
     </thead>
     <tbody>
@@ -60,20 +60,20 @@ require '../../modelos/Cliente.php';
             <?php endforeach ?>
         </tr>
         <tr>
-            <td><strong>NOMBRE:</strong></td>
+            <td><strong>NOMBRE CLIENTE:</strong></td>
             <?php foreach ($factura as $key => $venta) : ?>
                 <td><?= $venta['CLIENTE_NOMBRE'] ?></td>
             <?php endforeach ?>
         </tr>
         <tr>
-            <td><strong>NIT:</strong></td>
+            <td><strong>NUMERO NIT:</strong></td>
             <?php foreach ($factura as $key => $venta) : ?>
                 <td><?= $venta['CLIENTE_NIT'] ?></td>
             <?php endforeach ?>
         </tr>
         <?php if (count($factura) == 0) : ?>
             <tr>
-                <td colspan="3">NO EXISTEN REGISTROS</td>
+                <td colspan="3">NO HAY REGISTROS</td>
             </tr>
         <?php endif ?>
     </tbody>
@@ -126,7 +126,7 @@ require '../../modelos/Cliente.php';
 
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/crud_practica9/vistas/ventas/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
+                <a href="/tarea_09/vistas/ventas/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
             </div>
         </div>
     </div>
