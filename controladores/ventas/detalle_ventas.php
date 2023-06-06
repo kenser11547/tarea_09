@@ -51,7 +51,7 @@ try {
                                     <td><?= $venta['PRODUCTO_PRECIO'] ?></td>
                                     <td><?= $venta['DETALLE_CANTIDAD'] ?></td>
                                     <td><?= $venta['TOTAL'] ?></td>
-                                    <td><a class="btn btn-info w-100" href="/crud_practica9/vistas/ventas/factura.php?venta_id=<?php echo $venta['DETALLE_ID'] ?>">VER DETALLE</a></td>
+                                    <td><a class="btn btn-info w-100" href="/tarea_09/vistas/ventas/factura.php?venta_id=<?php echo $venta['DETALLE_ID'] ?>">VER DETALLE</a></td>
                                 </tr>
                             <?php endforeach ?>
                         <?php else : ?>
@@ -65,7 +65,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/crud_practica9/vistas/ventas/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
+                <a href="/tarea_09/vistas/ventas/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
             </div>
         </div>
     </div>
