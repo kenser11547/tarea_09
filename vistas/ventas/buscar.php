@@ -19,7 +19,7 @@ require_once '../../modelos/Producto.php';
     <div class="container">
         <h1 class="text-center">Formulario de búsqueda de ventas</h1>
         <div class="row justify-content-center">
-            <form action="/crud_practica9/controladores/ventas/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
+            <form action="/tarea_09/controladores/ventas/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
                         <label for="venta_cliente">Cliente</label>
