@@ -52,7 +52,7 @@ if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit']  != '' && $_POST['cli
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/crud_practica9/controladores/clientes/buscar.php?cliente_nombre=<?= $_POST['cliente_nombre'] ?>" class="btn btn-info">Volver al formulario</a>
+                <a href="/tarea_09/controladores/clientes/buscar.php?cliente_nombre=<?= $_POST['cliente_nombre'] ?>" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>
