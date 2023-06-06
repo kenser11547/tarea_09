@@ -46,8 +46,8 @@ try {
                             <td><?= $key + 1 ?></td>
                             <td><?= $cliente['CLIENTE_NOMBRE'] ?></td>
                             <td><?= $cliente['CLIENTE_NIT'] ?></td>
-                            <td><a class="btn btn-warning w-100" href="/crud_practica9/vistas/clientes/modificar.php?cliente_id=<?= $cliente['CLIENTE_ID']?>">Modificar</a></td>
-                            <td><a class="btn btn-danger w-100" href="/crud_practica9/controladores/clientes/eliminar.php?cliente_id=<?= $cliente['CLIENTE_ID']?>">Eliminar</a></td>
+                            <td><a class="btn btn-warning w-100" href="/tarea_09/vistas/clientes/modificar.php?cliente_id=<?= $cliente['CLIENTE_ID']?>">Modificar</a></td>
+                            <td><a class="btn btn-danger w-100" href="/tarea_09/controladores/clientes/eliminar.php?cliente_id=<?= $cliente['CLIENTE_ID']?>">Eliminar</a></td>
                         </tr>
                         <?php endforeach ?>
                         <?php else :?>
